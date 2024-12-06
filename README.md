@@ -53,13 +53,4 @@ Sinta-se à vontade para explorar, contribuir ou entrar em contato! 😊
 Otávio Rosa
 💻 Desenvolvedor com paixão por criar soluções inovadoras e impactantes!
 
-yaml
-Copiar código
 
----
-
-### O que inclui:
-1. **Títulos chamativos com emojis** para tornar o `README.md` mais atraente.
-2. **Seção sobre a DBServer** para conectar o portfólio à sua experiência.
-3. **Demonstração visual** (inclua uma captura ou GIF futuramente).
-4. Links de contato para facilitar conexões.
