@@ -17,19 +17,19 @@ header {
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between; /* Para garantir que o conteúdo seja distribuído */
+    justify-content: space-between; 
     align-items: center;
 }
-/* Ajuste no tamanho dos ícones no header */
+
 header .icons a img {
-    width: 50px; /* Ajuste o tamanho dos ícones conforme necessário */
-    height: 50px; /* Certifique-se de que a altura seja proporcional */
-    margin-left: 15px; /* Espaço entre os ícones */
+    width: 50px; 
+    height: 50px; 
+    margin-left: 15px; 
 }
 
-/* Ajuste na posição dos ícones no footer */
+
 footer .social-links img {
-    width: 80px; /* Ajuste o tamanho dos ícones no rodapé */
+    width: 80px; 
     height: 80px;
     margin: 0 10px;
 }
@@ -53,9 +53,9 @@ h1 {
 
 nav {
     margin-top: 15px;
-    flex-grow: 1; /* Garante que a navegação ocupe o espaço disponível */
+    flex-grow: 1; 
     display: flex;
-    justify-content: center; /* Centraliza os itens da navegação */
+    justify-content: center; 
 }
 
 nav ul {
@@ -68,7 +68,7 @@ nav ul li {
     display: inline;
 }
 nav ul li a {
-    color: white; /* Cor branca para os links */
+    color: white; 
     text-decoration: none;
     font-size: 18px;
 }
@@ -149,16 +149,16 @@ footer .social-links {
 }
 
 footer .social-links img {
-    width: 50px; /* Ajuste o tamanho para o valor que você deseja */
-    height: 50px; /* Certifique-se de manter a altura proporcional */
-    margin: 0 10px; /* Espaço entre os ícones */
+    width: 50px; 
+    height: 50px; 
+    margin: 0 10px; 
 }
 
 
 footer .social-links a {
     margin: 0 10px;
     color: white;
-    font-size: 16px; /* Tamanho reduzido */
+    font-size: 16px;
     text-decoration: none;
 }
 
