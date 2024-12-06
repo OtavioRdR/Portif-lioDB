@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #85d4f4ff;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Para garantir que o conteúdo seja distribuído */
+    align-items: center;
+}
+/* Ajuste no tamanho dos ícones no header */
+header .icons a img {
+    width: 50px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 50px; /* Certifique-se de que a altura seja proporcional */
+    margin-left: 15px; /* Espaço entre os ícones */
+}
+
+/* Ajuste na posição dos ícones no footer */
+footer .social-links img {
+    width: 80px; /* Ajuste o tamanho dos ícones no rodapé */
+    height: 80px;
+    margin: 0 10px;
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fotodeperfil-img {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav {
+    margin-top: 15px;
+    flex-grow: 1; /* Garante que a navegação ocupe o espaço disponível */
+    display: flex;
+    justify-content: center; /* Centraliza os itens da navegação */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: white; /* Cor branca para os links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #e2e2e2;
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #85d4f4;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links img {
+    width: 50px; /* Ajuste o tamanho para o valor que você deseja */
+    height: 50px; /* Certifique-se de manter a altura proporcional */
+    margin: 0 10px; /* Espaço entre os ícones */
+}
+
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 16px; /* Tamanho reduzido */
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav ul li {
+            margin: 10px 0;
+        }
+    }
+
+}

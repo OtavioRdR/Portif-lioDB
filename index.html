@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav id="navegacao">
+            <a href="https://db.tec.br/"> 
+                <img id="logo" src="image.png" alt="Logo da empresa DB">
+            </a>
+            <ul id="links-navegacao">
+                <li class="nav-item"><a href="index.html" target="_self">Sobre</a></li>
+                <li class="nav-item"><a href="https://drive.google.com/file/d/1rkxohMgyp6MY0Fr_Cu0jWjdbMUevv9ik/view?usp=sharing" target="_blank">Currículo</a></li>
+                <li class="nav-item"><a href="projetos.html" target="_self">Projetos</a></li>
+            </ul>
+        </nav>
+        <nav id="redes">
+            <ul id="redes-sociais">
+                <li class="social-item">
+                    <a href="https://github.com/OtavioRdR" target="_blank">
+                        <img src="assets/icones/25231.png" alt="Logo do GitHub" class="github-logo">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.linkedin.com/in/otavio-rosa-rodrigues/" target="_blank">
+                        <img src="assets/icones/174857.png" alt="Logo do Linkedin" class="linkedin-logo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+<main>
+    <section class="profile">
+        <div class="profile-container">
+            <h1>Olá, meu nome é <br>
+                <span>Otavio</span>
+            </h1>
+            <p style="font-family: 'TT-Supermolot-Neue-Trial', sans-serif; font-size: 36px;">
+                Sou trainee de
+                desenvolvimento <br>
+                de software na DBServer.</p>
+        </div>
+        <img src="Otavio.jpeg" alt="Foto do Otavio" class="fotodeperfil-img">
+    </section>
+    <section id="sobre" class="container">
+    <div class="about-card">
+        <div class="card-content">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou Otávio, desenvolvedor com experiência em Java, Node.js e ferramentas low-code como Power Apps.
+                Atuo no desenvolvimento de soluções inovadoras, com foco em eficiência e qualidade, além de possuir
+                conhecimentos em SQL, Git e metodologias ágeis. Estou sempre em busca de aprimorar minhas habilidades
+                técnicas por meio de projetos desafiadores e aprendizagem contínua.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+        <div class="skills">
+            <h2>Habilidades</h2>
+            <div class="backEnd-skills">
+                <h3>Back end</h3>
+                <div class="backEnd-container">
+                    <div class="ul-skills-backend">
+                        <ul>
+                            <li><span>JAVA</span></li>
+                            <li>MYSQL</li>
+                            <li>API</li>
+                            <li>DOCKER</li>
+                            <li>CSHARP</li>
+                        </ul>
+                    </div>
+                    <div class="imgs-skills">
+                        <ul>
+                            <li><img src="assets/Frames/Frame_3.png" alt="Imagem status"></li>
+                            <li><img src="assets/Frames/Frame_2.png" alt="Imagem status"></li>
+                            <li><img src="assets/Frames/Frame_1.png" alt="Imagem status"></li>
+                            <li><img src="assets/Frames/Frame_1.png" alt="Imagem status"></li>
+                            <li><img src="assets/Frames/Frame_3.png" alt="Imagem status"></li>
+                            <!--Frmae 3 = Excelente, 5 bolinhas
+                            Frame  4 = mediano 3 bolinhas
+                            Frame 7 = ruim 1 bolinha
+                            Frame 6 = sabe usa 2 bolinahs-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="frontEnd-skills">
+                <h3>Front end</h3>
+                <div class="frontEnd-container">
+                    <div class="ul-skills-frontend">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>REACT</li>
+                            <li>NODE</li>
+                        </ul>
+                    </div>
+                    <div class="imgs-skills">
+                        <ul>
+                            <li><img src="assets/Frames/Frame_5.png" alt="Imagem status"></li>
+                            <li><img src="assets/Frames/Frame_3.png" alt="Imagem status"></li>
+                            <li><img src="assets/Frames/Frame_3.png" alt="Imagem status"></li>
+                            <li><img src="assets/Frames/Frame_1.png" alt="Imagem status"></li>
+                            <li><img src="assets/Frames/Frame_1.png" alt="Imagem status"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 <span class="name">Otavio Rosa</span> - Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/otavirosa" target="_blank" aria-label="LinkedIn">
+                <img src="assets/icones/174857.png" alt="LinkedIn Logo">
+            </a>
+            <a href="https://github.com/otavirosa" target="_blank" aria-label="GitHub">
+                <img src="assets/icones/25231.png" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+    function moveUp(element) {
+      // Move o elemento para cima
+      element.style.transform = "translateY(-20px)";
+      // Retorna o elemento para a posição original após 300ms
+      setTimeout(() => {
+        element.style.transform = "translateY(0)";
+      }, 300);
+    }
+  </script>
+</html>
