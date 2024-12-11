@@ -16,7 +16,6 @@
 
 body {
     font-family: 'TT-Supermolot-Neue-Trial', sans-serif;
-
 }
 
 header {
@@ -26,42 +25,39 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.fotodeperfil-img{
 
-    width: 450px; 
-    height: 400px; 
-    margin-left: -10px;
-    margin-right: 16%;
-    border-radius: 10%;
-    
-
+.fotodeperfil-img {
+    width: 567px;
+    height: 400px;
+    top: 157px;
+    left: 757px;
+    object-fit: cover;
+    margin-left: 50%; /* Move a imagem ainda mais para o lado esquerdo */
+    margin-right: 10%;  /* Gar /* Centraliza a imagem horizontalmente */
 }
 
 .profile {
     display: flex;
-    align-items: center; 
-    gap: 20px; 
-    margin-top: -10px; 
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    margin-top: 20px; /* Espaço acima da seção de perfil */
 }
 
 .profile-container {
     display: flex;
-    gap: 10rem;
-    justify-content: flex-start; 
-    margin-top: 20px; 
+    flex-direction: column; /* Mantém o texto em coluna */
+    gap: 1rem; /* Espaçamento entre os elementos */
+    margin-right: -450px; /* Espaço à direita da imagem */
 }
 
 .github-logo {
     width: 60px;
     height: auto;
-    margin: -16px;
-    margin-top: -100%;
 }
 
-.Linkedin-logo{
+.linkedin-logo {
     width: 50px;
     height: auto;
-    margin: -10px;
 }
 
 nav#navegacao {
@@ -75,15 +71,14 @@ ul#links-navegacao {
     align-items: center;
     justify-content: center;
     list-style: none;
-    gap: 10px;
+    gap: 100px;
 }
-
 
 ul#links-navegacao li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 16px 8px 16px;
+    padding: 8px 16px;
 }
 
 ul#links-navegacao li a:hover {
@@ -97,6 +92,7 @@ ul#links-navegacao li a:hover {
     font-size: 18px;
     transition: transform 0.3s ease; 
 }
+
 #redes-sociais li {
     display: flex;
     align-items: center; 
@@ -114,8 +110,8 @@ ul#redes-sociais {
     display: flex;
     gap: 20px;
     list-style: none;
-
 }
+
 .social-item img {
     width: 50px;   
     height: 50px;  
@@ -138,218 +134,104 @@ main {
 section.profile {
     display: flex;
     gap: 3rem;
-    justify-content: space-between;
+    justify-content: flex-start; /* Mantém os itens alinhados à esquerda */
+}
+.profile-container{
+    margin-left: 20px;
+    display: flex;
 }
 
+
 .profile-container h1 {
-    font-size: 48px; 
+    font-size: 26px; 
     margin-right: 0;
     margin-top: 0;
+    margin-left: 20px;
 }
 
 .profile-container span {
     font-family: 'Roboto Flex', sans-serif;
-    font-size: 80px;
-    color: #85d4f4; 
+    font-size: 60px;
+    white-space: nowrap;
+    color: #000000; 
 }
 
-.container {
-    display: flex;
-    justify-content: flex-start; 
-    margin-top: 35px;
+.profile-container p {
+    font-size: 24px; 
+    line-height: 1.5; 
+    margin-left: 20px;
+}
+@font-face {
+    font-family: 'TT-Supermolot-Neue-Trial';
+    src: url('assets/Fonte/TT-Supermolot-Neue-Trial-Regular-BF65fcfb4f8c934.ttf');
 }
 
-.profile-container {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 2rem;
-}
-
-.about {
-    max-width: 600px;
-    margin-left: 0; 
-    text-align: justify; 
-    margin: 2 auto; 
-    width: 100%; 
-}
-
-.about p {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 16px; 
-    line-height: 1.8; 
-    margin-top: 20px; 
-    margin-bottom: 30px; 
-    text-align: center; 
-}
-
-.about h1 {
-    font-family: 'TT-Supermolot-Neue-Trial-Bold', sans-serif;
-    font-size: 36px;
-    margin-bottom: 200px; 
-    line-height: 1.4; 
-}
 .about-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    max-width: 600px;
-    margin: 10px ;
-    text-align: center;
-    font-family: 'TT-Supermolot-Neue-Trial', sans-serif;
-}
-
-.about-card h2 {
-    font-family: 'TT-Supermolot-Neue-Trial-Bold', sans-serif;
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #414ABA;
-    text-transform: uppercase;
+    padding: 30px;
+    max-width: 500px;
+    margin: 20px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: -100px;
 }
 
 .about-card p {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 18px;
-    line-height: 1.6;
-    color: #333;
+    color: #000000;
     text-align: justify;
 }
 
-@media (max-width: 768px) {
-    .about-card {
-        padding: 15px;
-    }
-
-    .about-card h2 {
-        font-size: 4px;
-    }
-
-    .about-card p {
-        font-size: 16px;
-    }
+.skills {
+    width: fit-content; /* Ajusta a largura para caber no conteúdo */
+    margin-top: -200px; /*lls Espaçamento entre a imagem e as ski */
+    display: flex;
+    flex-direction: column; /* Empilha as habilidades */
+    align-items: center; /* Centraliza o texto em relação ao container */
+    margin-left: 62%; /* Move o container para o lado desejado */
+    text-align: left;
+    min-height: 200px; /* Garante a mesma altura para os dois contêineres */
+    width: 16%;
+    gap: 30px; /* Aumenta o espaço entre as colunas */ / /* /* Espaço acima da seção de habilidades */
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 .skills h2 {
     font-family: 'TT-Supermolot-Neue-Trial-Bold', sans-serif; 
-    font-size: 36px;
-    margin-left: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-    letter-spacing: 1px; 
+    font-size: 39px;
+    margin-left: -40px;
+    letter-spacing: 2px;
+    margin-top: 20px; 
+
 }
 
-
-.skills {
-    width: 47%;
-    height: -10px;
-    margin-top: -350px;
+.skill-image-group {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens "quebrem linha" */
+    gap: 20px; /* Espaçamento entre as imagens */
 }
 
+.ul-skills-backend {
+    flex: 1; 
+    margin-right: 40px;/* Isso vai garantir que a lista de habilidades ocupe todo o espaço disponível à esquerda */
+  }
 
-.skills h2 {
-    font-family: 'TT-Supermolot-Neue-Trial-Bold', sans-serif;
-    font-size: 36px;
-    margin-left: 90px;
-    margin-top: -230px;
-    margin-left: 128%;
+
+
+.backEnd-container, .frontEnd-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    width: 100%; /* Garante que ambos tenham a mesma largura */
+    align-items: center; /* Alinha verticalmente os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+    font-size: 23px;
+    padding-left: 10%; /* Move o conteúdo para combinar com a posição da imagem e skills */
+    box-sizing: border-box; 
+    
 }
-
-.backEnd-skills {
-    margin-top: 0px; 
-    margin-left: 128%;   
-}
-
 .backEnd-container {
-    display: flex;
-    justify-content: flex-start; 
-    width: 100%; 
-    align-items: center;
-    gap: 20px; 
+    margin-left: -7px;
 }
 
-.ul-skills-backend ul {
-    padding-left: 0; 
-    line-height: 27px;
-}
-
-.backEnd-container ul li {
-    margin-left: 10px; 
-}
-
-.backEnd-skills h3 {
-    text-align: left;
-    margin: 0;
-    margin-left: 0; 
-}
-
-
-.imgs-skills ul {
-    list-style: none;
-    margin-right: 0px;
-}
-
-.frontEnd-skills {
-    margin-top: 10px;
-    margin-left: 127%; 
-}
-.frontEnd-container {
-    display: flex;
-    justify-content: flex-start; 
-    width: 100%; 
-}
-
-.ul-skills-frontend ul {
-    padding-left: 0; 
-    line-height: 27px;
-}
-
-
-.frontEnd-container ul li {
-    margin-left: 10px;
-}
-
-.head-card h2 {
-    font-family: 'TT-Supermolot-Neue-Trial-Bold', sans-serif;
-    font-size: 36px;
-}
-
-.head-card h1 {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 80px;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 70px;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    text-align: left;
-    width: 300px; 
-}
-
-.card img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.card h2 {
-    font-size: 32px;
-    margin: 10px 0 10px 0;
-}
-
-.card p {
-    text-align: left;
-    margin: 10px 0 10px 0;
-    font-family: 'Roboto Flex', sans-serif;
-}
 
 .buttons {
     display: flex;
@@ -370,10 +252,6 @@ section.profile {
     width: 100%;
 }
 
-.card span {
-    font-family: 'TT-Supermolot-Neue-Trial-Bold', sans-serif;
-    color: #ED177D;
-}
 footer {
     background-color: #85d4f4;
     color: white;
@@ -423,7 +301,6 @@ footer .social-links img:hover {
     transform: scale(1.2);
 }
 
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -441,5 +318,37 @@ footer .social-links img:hover {
 
     #redes {
         justify-content: center;
+    }
+
+    .profile {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .fotodeperfil-img {
+        width: 80%; /* Ajuste para telas menores */
+        max-width: 300px;
+         /* Limite máximo para a imagem */
+    }
+
+    .skills {
+        width: 100%; /* Ajusta a largura da seção de habilidades para ocupar toda a tela */
+        margin-top: 20px; /* Espaço acima da seção de habilidades */
+    }
+
+    .about {
+        margin: 20px 0; /* Espaço acima e abaixo da seção "Sobre mim" */
+    }
+
+    .about-card {
+        padding: 15px; /* Ajusta o padding para telas menores */
+    }
+
+    .about-card h2 {
+        font-size: 24px; /* Ajusta o tamanho do título */
+    }
+
+    .about-card p {
+        font-size: 16px; /* Ajusta o tamanho do texto */
     }
 }

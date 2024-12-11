@@ -12,28 +12,26 @@ body {
 }
 
 header {
-    background-color: #85d4f4ff;
-    color: white;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 87px;
+    padding: 25px;
+    background-color: #85d4f4;
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens verticalmente */
 }
 
 header .icons a img {
     width: 50px; 
     height: 50px; 
     margin-left: 15px; 
+    margin-top: 11px;
 }
-
 
 footer .social-links img {
     width: 80px; 
     height: 80px;
     margin: 0 10px;
 }
-
 
 .profile-container {
     display: flex;
@@ -42,9 +40,16 @@ footer .social-links img {
 }
 
 .fotodeperfil-img {
-    width: 100px;
-    height: 50px;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    margin-top: -2px;
+    max-width: 100%; /* Ensures the image does not exceed the container width */
+}
+
+.fotodeperfil-img img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 150px; /* Optional: Set a max width to prevent it from being too large */
 }
 
 h1 {
@@ -67,16 +72,12 @@ nav ul {
 nav ul li {
     display: inline;
 }
+
 nav ul li a {
-    color: white; 
+    color: #414ABA; 
     text-decoration: none;
     font-size: 18px;
 }
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 
 nav ul li a:hover {
     text-decoration: underline;
@@ -96,7 +97,7 @@ main {
 
 .card {
     background-color: #e2e2e2;
-    width: 30%;
+    width: calc(33.33% - 20px); /* Ajusta a largura das cartas */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -139,7 +140,7 @@ main {
 footer {
     background-color: #85d4f4;
     color: white;
-    padding: 15px;
+    padding: 30px; 
     text-align: center;
     margin-top: 100px;
 }
@@ -154,7 +155,6 @@ footer .social-links img {
     margin: 0 10px; 
 }
 
-
 footer .social-links a {
     margin: 0 10px;
     color: white;
@@ -166,38 +166,38 @@ footer .social-links a:hover {
     color: #ccc;
 }
 
+/* Media Queries para Responsividade */
 @media screen and (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
+    header {
+        flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
     }
 
     .profile-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    @media screen and (max-width: 768px) {
-        nav ul {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        nav ul li {
-            margin: 10px 0;
-        }
+        flex-direction: column; /* Alinha a imagem e o texto em coluna */
+        align-items: center; /* Centraliza os itens */
     }
 
+    .card-container {
+        flex-direction: column; /* Alinha as cartas em coluna */
+        align-items: center; /* Centraliza as cartas */
+    }
+
+    .card {
+        width: 80%; /* As cartas ocupam 80% da largura em telas pequenas */
+    }
+
+    nav ul {
+        flex-direction : column; /* Alinha os itens do menu em coluna */
+        align-items: center; /* Centraliza os itens do menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adiciona espaço entre os itens do menu */
+    }
+
+    footer {
+        flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+    }
 }
