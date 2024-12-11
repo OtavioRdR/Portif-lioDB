@@ -27,6 +27,23 @@ header .icons a img {
     margin-top: 11px;
 }
 
+.head-card h2 {
+    font-size: 30px; /* Ajusta o tamanho do 'Meus' */
+    font-weight: bold; /* Torna o texto em negrito */
+    margin-bottom: -15px;
+    margin-left: 200px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.head-card h1 {
+    font-size: 53px; /* Ajusta o tamanho do 'Projetos' */
+    font-weight: bold;
+    margin-left: 200px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
 footer .social-links img {
     width: 80px; 
     height: 80px;
@@ -60,17 +77,21 @@ nav {
     margin-top: 15px;
     flex-grow: 1; 
     display: flex;
-    justify-content: center; 
+    padding: 8px 16px;
+    
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 15px; /* Espaçamento entre os itens do menu */
+    margin: 0;
+    padding: 8px 16px;
 }
 
 nav ul li {
-    display: inline;
+    display: flex;
+    padding: 8px 16px;
 }
 
 nav ul li a {
@@ -89,82 +110,93 @@ main {
 }
 
 .card-container {
+    margin-top: 38px;
     display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    gap: 160px; /* Reduz o espaço entre os cards */
+    justify-content: center;
     flex-wrap: wrap;
 }
 
+
 .card {
-    background-color: #e2e2e2;
-    width: calc(33.33% - 20px); /* Ajusta a largura das cartas */
-    padding: 20px;
+    background-color: #ffffff;
+    width: 380px;
+    height: 600px; /* Largura fixa dos cards */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Garante que o conteúdo fique dentro do card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    position: relative; /* Para posicionar os elementos internos corretamente */
     transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
 .card img {
-    max-width: 100%;
-    border-radius: 8px;
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    height: 220px; /* Define uma altura fixa para manter a consistência */
+    object-fit: cover; /* Faz com que a imagem preencha a área sem distorcer */
+    margin: 0; /* Remove margens */
+    border-top-left-radius: 8px; /* Mantém o arredondamento no topo */
+    border-top-right-radius: 8px;
 }
-
 .card h2 {
-    font-size: 22px;
-    margin-top: 15px;
+    font-size: 29px; /* Reduzi o tamanho do texto */
+    margin-top: 20px;
 }
 
 .card p {
-    margin: 10px 0;
-    color: #555;
+    font-size: 15px;
+    margin: 0 2px 1px;
+    color: #666;
+    padding: 0 100px; /* Adiciona espaçamento interno */
 }
 
 .card a {
     display: inline-block;
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+    margin-bottom: 15px;
     text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #414ABA;
+    border: 1px solid #414ABA;
+    padding: 5px 150px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .card a:hover {
-    background-color: #555;
+    background-color: #4149ba8f;
+    color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de zoom no hover */
 }
 
 footer {
     background-color: #85d4f4;
     color: white;
-    padding: 30px; 
+    padding: 0px; 
     text-align: center;
     margin-top: 100px;
 }
-
-footer .social-links {
-    margin-top: 10px;
+footer .social-links a {
+    display: inline-block; /* Garante que a imagem seja tratada como um bloco em linha */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
 }
 
 footer .social-links img {
-    width: 50px; 
-    height: 50px; 
-    margin: 0 10px; 
+    width: 300px; /* Aumenta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    cursor: pointer; /* Mostra o cursor de link ao passar o mouse */
 }
 
-footer .social-links a {
-    margin: 0 10px;
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
+footer .social-links a:hover img {
+    transform: scale(1.2); /* Aumenta a imagem ao passar o mouse */
 }
 
-footer .social-links a:hover {
-    color: #ccc;
-}
 
 /* Media Queries para Responsividade */
 @media screen and (max-width: 768px) {
